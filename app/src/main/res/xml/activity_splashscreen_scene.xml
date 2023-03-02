@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="3000"
+        motion:autoTransition="animateToEnd">
+        <KeyFrameSet>
+            <!-- ImageView - 0% -->
+            <KeyAttribute
+                motion:motionTarget="@+id/imageView"
+                motion:framePosition="0"
+                android:scaleX="0.9" />
+            <KeyAttribute
+                motion:motionTarget="@+id/imageView"
+                motion:framePosition="0"
+                android:scaleY="0.9" />
+            <!--           ImageView - 40% -->
+            <KeyAttribute
+                motion:motionTarget="@+id/imageView"
+                motion:framePosition="15"
+                android:scaleX="5" />
+            <KeyAttribute
+                motion:motionTarget="@+id/imageView"
+                motion:framePosition="15"
+                android:scaleY="5" />
+            <!-- ImageView - 100% -->
+            <KeyAttribute
+                motion:motionTarget="@+id/imageView"
+                motion:framePosition="30"
+                android:scaleX="20" />
+            <KeyAttribute
+                motion:motionTarget="@+id/imageView"
+                motion:framePosition="30"
+                android:scaleY="20" />
+            <!-- ImageView - pamapatagal -->
+            <KeyAttribute
+                motion:motionTarget="@+id/imageView"
+                motion:framePosition="100"
+                android:scaleX="20" />
+            <KeyAttribute
+                motion:motionTarget="@+id/imageView"
+                motion:framePosition="100"
+                android:scaleY="20" />
+            <!-- Icon - 0% -->
+            <KeyAttribute
+                motion:motionTarget="@+id/appicon"
+                motion:framePosition="0"
+                android:scaleX="1.2" />
+            <KeyAttribute
+                motion:motionTarget="@+id/appicon"
+                motion:framePosition="0"
+                android:scaleY="1.2" />
+            <!-- Icon - 50% -->
+            <KeyAttribute
+                motion:motionTarget="@+id/appicon"
+                motion:framePosition="15"
+                android:scaleX="0.0" />
+            <KeyAttribute
+                motion:motionTarget="@+id/appicon"
+                motion:framePosition="15"
+                android:scaleY="0.0" />
+            <!-- Icon - 100% -->
+            <KeyAttribute
+                motion:motionTarget="@+id/appicon"
+                motion:framePosition="30"
+                android:scaleX="0.0" />
+            <KeyAttribute
+                motion:motionTarget="@+id/appicon"
+                motion:framePosition="30"
+                android:scaleY="0.0" />
+            <!-- Icon - pampatagal% -->
+            <KeyAttribute
+                motion:motionTarget="@+id/appicon"
+                motion:framePosition="100"
+                android:scaleX="0.0" />
+            <KeyAttribute
+                motion:motionTarget="@+id/appicon"
+                motion:framePosition="100"
+                android:scaleY="0.0" />
+
+            <KeyAttribute
+                motion:motionTarget="@+id/tanjiro"
+                motion:framePosition="30"
+                android:scaleX="1.2" />
+            <KeyAttribute
+                motion:motionTarget="@+id/tanjiro"
+                motion:framePosition="30"
+                android:scaleY="1.2" />
+<!--            <KeyAttribute-->
+<!--                motion:motionTarget="@+id/nezuko"-->
+<!--                motion:framePosition="0"-->
+<!--                android:scaleX="0" />-->
+<!--            <KeyAttribute-->
+<!--                motion:motionTarget="@+id/nezuko"-->
+<!--                motion:framePosition="0"-->
+<!--                android:scaleY="0" />-->
+<!--            <KeyAttribute-->
+<!--                motion:motionTarget="@+id/nezuko"-->
+<!--                motion:framePosition="50"-->
+<!--                android:scaleX="0" />-->
+<!--            <KeyAttribute-->
+<!--                motion:motionTarget="@+id/nezuko"-->
+<!--                motion:framePosition="50"-->
+<!--                android:scaleY="0" />-->
+<!--            <KeyAttribute-->
+<!--                motion:motionTarget="@+id/nezuko"-->
+<!--                motion:framePosition="65"-->
+<!--                android:scaleX="1.2" />-->
+<!--            <KeyAttribute-->
+<!--                motion:motionTarget="@+id/nezuko"-->
+<!--                motion:framePosition="65"-->
+<!--                android:scaleY="1.2" />-->
+<!--            <KeyAttribute-->
+<!--                motion:motionTarget="@+id/nezuko"-->
+<!--                motion:framePosition="100"-->
+<!--                android:scaleX="1.2" />-->
+<!--            <KeyAttribute-->
+<!--                motion:motionTarget="@+id/nezuko"-->
+<!--                motion:framePosition="100"-->
+<!--                android:alpha="1.2" />-->
+
+        </KeyFrameSet>
+        <OnSwipe motion:springDamping="11.679" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_height="516dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.51"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            android:layout_width="247dp"
+            android:id="@+id/appicon"
+            motion:layout_constraintVertical_bias="0.49"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:layout_height="1013dp"
+            android:layout_marginTop="16dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            android:layout_width="573dp"
+            motion:layout_constraintVertical_bias="0.638"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/imageView"
+            motion:layout_constraintHorizontal_bias="0.43" />
+        <Constraint
+            android:layout_height="796dp"
+            android:layout_width="632dp"
+            android:id="@+id/tanjiro"
+            motion:layout_editor_absoluteX="-111dp"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            motion:layout_constraintVertical_bias="0.499"
+            android:layout_height="136dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.497"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            android:layout_width="156dp"
+            android:id="@+id/appicon" />
+        <Constraint
+            android:layout_width="648dp"
+            android:layout_height="1005dp"
+            android:id="@+id/tanjiro"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintVertical_bias="0.261"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:layout_height="890dp"
+            android:layout_marginTop="0dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="1.0"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            android:layout_width="468dp"
+            motion:layout_constraintVertical_bias="0.462"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/imageView" />
+        <Constraint
+            android:layout_height="940dp"
+            android:layout_width="544dp"
+            android:id="@+id/nezuko"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:scaleX="1.2"
+            android:scaleY="1.2" />
+    </ConstraintSet>
+</MotionScene>

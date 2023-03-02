@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CustomListView</string>
+    <string name="anime_character_name">Anime Character Name</string>
+    <string name="role">Role</string>
+    <string name="anime_image">anime image</string>
+    <string name="demon_slayer_kimetsu_no_yaiba">Demon Slayer Kimetsu No Yaiba</string>
+    <string name="character_details">Character Details</string>
+</resources>
